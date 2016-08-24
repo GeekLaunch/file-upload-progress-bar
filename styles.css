@@ -1,0 +1,48 @@
+:root {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #3af;
+}
+
+main {
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    text-align: center;
+}
+
+#file-input {
+    display: none;
+}
+
+label[for='file-input'] {
+    color: white;
+    background-color: #06f;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label[for='file-input']:hover {
+    background-color: #28f;
+}
+
+#file-input:disabled + label[for='file-input'] {
+    background-color: #aaa;
+    cursor: default;
+}
+
+#upload-progress {
+    visibility: hidden;
+}
+
+#upload-progress.visible {
+    visibility: visible;
+}
